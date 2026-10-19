@@ -24,7 +24,7 @@ def play_alert_sound():
 def main():
     cap = cv2.VideoCapture(CAMERA_INDEX)
     if not cap.isOpened():
-        raise RuntimeError("Camera error")
+        raise RuntimeError("CAMERA ERROR")
 
     bg_subtractor = cv2.createBackgroundSubtractorMOG2(history=600, varThreshold=VAR_THRESHOLD, detectShadows=True)
     kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5))
