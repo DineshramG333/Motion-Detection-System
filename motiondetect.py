@@ -69,7 +69,7 @@ def main():
             cv2.putText(frame, f"CAM-01 | VAULT ZONE | {timestamp}", (10, 22), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
 
             if motion_found:
-                cv2.circle(frame, (25, 55), 8, (0, 0, 255), -1)
+                cv2.circle(frame, (25, 55), 8, (0, 0, 260), -1)
                 cv2.putText(frame, "BREACH DETECTED", (40, 60), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2)
                 
                 if now - last_beep_time >= BEEP_COOLDOWN:
